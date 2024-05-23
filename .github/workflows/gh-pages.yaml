@@ -2,8 +2,10 @@ name: GitHub Pages
 
 on:
   push:
-    branches:
-      - main  # Set a branch to deploy
+    # branches:
+    #   - main  # Set a branch to deploy
+    tags:
+      - 'v*'
   pull_request:
   workflow_dispatch:
 
